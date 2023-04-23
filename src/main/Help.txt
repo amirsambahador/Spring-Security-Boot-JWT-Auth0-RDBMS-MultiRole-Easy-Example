@@ -1,0 +1,16 @@
+1) create user: http://localhost:8080/create-user?username=amirsam&password=myjava123
+
+
+2) login in user and get token by: http://localhost:8080/login?username=amirsam&password=myjava123
+
+
+3) test access: http://localhost:8080/admin/ -> Success
+   Header{
+       Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImFtaXJzYW0iLCJpYXQiOjE2ODIyODYyNjQsImlzcyI6Imh0dHA6Ly9KMk9TLm9yZyJ9.kYM7ao2aJUDHbDt-JhnxE7_bYFC3gazaZxWmGYcC1Hs
+   }
+
+
+4) test access: http://localhost:8080/user/ -> Error
+   Header{
+       Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImFtaXJzYW0iLCJpYXQiOjE2ODIyODYyNjQsImlzcyI6Imh0dHA6Ly9KMk9TLm9yZyJ9.kYM7ao2aJUDHbDt-JhnxE7_bYFC3gazaZxWmGYcC1Hs
+   }

@@ -1,0 +1,13 @@
+spring:
+  datasource:
+    url: jdbc:oracle:thin:@localhost:1521/xepdb1
+    username: amirsam
+    password: myjava123
+  jpa:
+    hibernate:
+      ddl-auto: create-drop
+    show-sql: false
+    database-platform: org.hibernate.dialect.Oracle12cDialect
+jwt:
+  secret-key: j2os-secret-code-myjava123 ;)
+  issuer: http://j2os.org
